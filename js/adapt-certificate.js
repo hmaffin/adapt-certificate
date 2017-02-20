@@ -89,10 +89,10 @@ define(function(require) {
         }
     },
     {
-        template: 'text'
+        template: 'certificate'
     });
 
-    Adapt.register('text', Text);
+    Adapt.register('certificate', Certificate);
 
-    return Text;
+    return Certificate;
 });
