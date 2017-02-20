@@ -7,6 +7,8 @@ define(function(require) {
 
         preRender: function() {
             this.checkIfResetOnRevisit();
+             //Extra line of code for username info 
+            this.replaceText();
         },
 
         postRender: function() {
@@ -14,7 +16,19 @@ define(function(require) {
 
             this.setupInview();
         },
+ //This is the username info
+        replaceText: function() {
+    var learnerInfo = Adapt.offlineStorage.get('learnerinfo');
 
+    var fname = "Student";
+
+    if(learnerInfo !== undefined && learnerInfo.firstname !== "") {
+        fname = learnerInfo.firstname;
+    }
+
+    this.model.set('body', this.model.get('body').replace("{{firstname}}", fname));
+},
+        //End of the username info
         setupInview: function() {
             var selector = this.getInviewElementSelector();
 
