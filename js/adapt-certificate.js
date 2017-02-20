@@ -88,8 +88,8 @@ define(function(require) {
             ComponentView.prototype.remove.call(this);
         }
     },
-    {
-        template: 'certificate'
+ 
+
     });
 
     Adapt.register('certificate', Certificate);
