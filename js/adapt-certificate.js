@@ -3,7 +3,7 @@ define(function(require) {
     var ComponentView = require('coreViews/componentView');
     var Adapt = require('coreJS/adapt');
 
-    var Text = ComponentView.extend({
+    var Certificate = ComponentView.extend({
 
         preRender: function() {
             this.checkIfResetOnRevisit();
