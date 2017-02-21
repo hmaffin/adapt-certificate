@@ -87,9 +87,6 @@ define(function(require) {
             
             ComponentView.prototype.remove.call(this);
         }
-    },
- 
-
     });
 
     Adapt.register('certificate', Certificate);
