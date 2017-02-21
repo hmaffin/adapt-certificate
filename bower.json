@@ -5,7 +5,7 @@
   "homepage": "https://github.com/hmaffin/adapt-certificate",
   "issues": "https://github.com/hmaffin/adapt-certificate/issues",
   "displayName" : "Certificate",
-  "component" : "Certificate",
+  "component" : "certificate",
   "description": "A simple certificate",
   "main": "/js/adapt-certificate.js",
   "keywords": [
